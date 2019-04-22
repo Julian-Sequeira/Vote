@@ -5,28 +5,20 @@ class App extends React.Component {
 		this.state = { view: "home" }		
 	}
 
-	navSwitch(view) {
+	navigate(view) {
 		this.setState({ view });
 	}
 
 	render() {
-
-		View = (view) => {
-			let display;
-			switch(view) {
-				case "login":
-					display = ( <Login></Login>)
-			}
-		}
-
 		return ( 
-
+			
+			<div style="margin: auto">
+				<h1>Welcome to Vote!</h1>
+				<Home></Home> 
+			</div>
+			
 		)
-
 	}
-
-
-
-
-
 }
+
+export default VoteApp;

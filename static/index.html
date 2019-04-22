@@ -7,10 +7,16 @@
 	<script src="lib/react.js"></script>
 	<script src="lib/react-dom.js"></script>
 	<script src="lib/babel.min.js"></script>
+	<script type="text/babel">
+		import App from 'script/voteapp.js';
+	</script>
 </head>
-<body>
 
+<body>
 	<!-- React Injected Here -->
-	<div id="root"></div>
+	<div id="inject"></div>
+	<script type="text/babel">
+		ReactDOM.render(<App></App>, document.getElementById("inject"));	
+	</script>
 </body>
 </html>
